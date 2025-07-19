@@ -439,6 +439,126 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.7;
 }
 
+/* Image Gallery */
+
+/* General styles */
+.image-section {
+    background-color: #f9f9f9;
+}
+
+.image-section .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.image-section .title-underline {
+    width: 80px;
+    height: 4px;
+    background: #007bff;
+    margin: 10px auto;
+}
+
+.image-section .section-subtitle {
+    font-size: 1rem;
+    color: #666;
+}
+
+.imageport {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.slides {
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.numbertext {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s ease;
+    user-select: none;
+    border-radius: 0 3px 3px 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Dots/bullets */
+.dots {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Responsive tweaks */
+/* @media screen and (max-width: 768px) {
+    .prev,
+    .next {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .numbertext {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+} */
+
+
 /* Contact Section */
 .contact-section {
     padding: 5rem 0;

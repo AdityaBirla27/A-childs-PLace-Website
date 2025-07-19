@@ -285,7 +285,7 @@ function submitForm(data) {
     // Simulate API call
     setTimeout(() => {
         // Show success message
-        showFormMessage('success', 'Thank you for your message! We'll get back to you within 24 hours.');
+        showFormMessage('success', 'Thank you for your message! We\'ll get back to you within 24 hours.');
 
         // Reset form
         document.getElementById('contactForm').reset();
@@ -466,3 +466,59 @@ const debouncedScrollHandler = debounce(function() {
 }, 16); // ~60fps
 
 window.addEventListener('scroll', debouncedScrollHandler);
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+// Image Gallery functions
+
+function showSlides(n) {
+    let i;
+    const slides = document.getElementsByClassName("slide");
+    const dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+}
+
+// Optional: Swipe support for mobile
+let startX = 0;
+let endX = 0;
+
+const imageport = document.querySelector('.imageport');
+
+imageport.addEventListener('touchstart', function(e) {
+    startX = e.changedTouches[0].screenX;
+}, false);
+
+imageport.addEventListener('touchend', function(e) {
+    endX = e.changedTouches[0].screenX;
+    handleSwipe();
+}, false);
+
+function handleSwipe() {
+    if (startX - endX > 50) {
+        plusSlides(1); // Swipe left
+    } else if (endX - startX > 50) {
+        plusSlides(-1); // Swipe right
+    }
+}
