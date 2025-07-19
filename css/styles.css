@@ -77,6 +77,12 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+    left: 2px;
+}
+
 .brand-text {
     background: var(--gradient-primary);
     -webkit-background-clip: text;
