@@ -6,7 +6,7 @@
     --success-color: #96CEB4;
     --warning-color: #FFEAA7;
     --text-dark: #2D3436;
-    --text-light: #636E72;
+    --text-light: #333;
     --background-light: #F8F9FA;
     --white: #FFFFFF;
     --gradient-primary: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
@@ -78,9 +78,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-brand img {
-    height: 60px;
+    height: 30px;
     width: auto;
-    left: 2px;
 }
 
 .brand-text {
@@ -132,7 +131,6 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="pattern" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23pattern)"/></svg>');
     opacity: 0.5;
 }
 

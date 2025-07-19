@@ -357,16 +357,16 @@ window.addEventListener('load', function() {
     document.body.classList.add('loaded');
 });
 
-// Parallax effect for hero section
-window.addEventListener('scroll', function() {
-    const scrolled = window.pageYOffset;
-    const parallax = document.querySelector('.hero-section');
+// // Parallax effect for hero section
+// window.addEventListener('scroll', function() {
+//     const scrolled = window.pageYOffset;
+//     const parallax = document.querySelector('.hero-section');
 
-    if (parallax) {
-        const speed = scrolled * 0.5;
-        parallax.style.transform = `translateY(${speed}px)`;
-    }
-});
+//     if (parallax) {
+//         const speed = scrolled * 0.5;
+//         parallax.style.transform = `translateY(${speed}px)`;
+//     }
+// });
 
 // Add hover effects to service cards
 function initServiceCardEffects() {

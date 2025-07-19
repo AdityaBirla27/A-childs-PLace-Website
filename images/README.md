@@ -15,3 +15,5 @@ Recommended images to add:
 - Compress images for web use
 - Use appropriate dimensions for each section
 - Include alt text for accessibility
+
+
